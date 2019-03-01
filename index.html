@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>AIs and Javascript games</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h4>AIs and Javascript games</h4>
+            <p>Here I will provide links to simple javascript games I've created, with AIs created either using a genetic algorithm or machine learning.</p>
+        </header>
+        <ul>
+            <li><a href="./smart_particles/index.html" target="_blank">Smart particles</a>: The goal of the particles is the reach the goal (green circle). 
+                You can choose level using the select element and change the speed using the slider. The red particle is the best of the previous generation.
+                <p>
+                    <strong>Genetic algorithm:</strong>  The "genes" of the particles are directions at a certain time frame. 
+                    The genes are passed on the next generation mimicking "survival of the fitteest".
+                    In the end, the particles have basically memorized the path to the goal by trial and error.
+                </p>
+                <p>
+                    <strong>Machine learning:</strong> The input for the machine learning algorithm is in which direction the goal is,
+                    as well as their distance to walls in the direction their facing as well as left and right.
+                    In contrary to the genetic algorithm, where the path is memorized, the particles can learn to find a randomly moving target.
+                <p>
+            </li>
+            <li><a href="./shooting-game/index.html" target="_blank">Shooting game</a>
+            <p><strong>Play yourself:</strong> Use the spacebar and the left/right arrows to play. Shoot the circles before they hit the ground.</p>
+            <p><strong>Machine leaerning:</strong> A neural network learns to play the game using a neuroevolution machine learning algorithm.</p>
+        </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
